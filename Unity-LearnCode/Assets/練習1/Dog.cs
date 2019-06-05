@@ -7,10 +7,18 @@ public class Dog
     public string name;
     public float Weight;
     public string type;
-    public string sex;
     public string color;
-    public int age;
+
+    private string sex;
+    private int age;
     #endregion
+
+    //建構函式
+    public Dog(string sex)
+    {
+        this.sex=sex;
+        this.age = age;
+    }
 
     #region
     /// <summary>
