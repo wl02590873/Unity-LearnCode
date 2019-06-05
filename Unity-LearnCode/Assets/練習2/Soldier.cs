@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+[System.Serializable]
 public class Soldier
 {
     public int exp;
@@ -18,7 +18,7 @@ public class Soldier
     /// <summary>
     /// 設定經驗值
     /// </summary>
-    /// <param name="getExp"></param>
+    /// <param name="getExp">取得的經驗值</param>
     public void SetExp(int getExp)
     {
         exp = getExp;
