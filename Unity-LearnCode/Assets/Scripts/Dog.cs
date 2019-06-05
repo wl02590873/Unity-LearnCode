@@ -29,7 +29,7 @@ public class Dog
     {
         return age * 7;
     }
-    public void Eat(string food,string speed = "慢")
+    public void Eat(string food, string speed = "慢")
     {
         Debug.Log(name + ":" + food + "，速度:" + speed);
     }
@@ -39,7 +39,7 @@ public class Dog
     /// </summary>
     /// <param name="food">食物</param>
     /// <param name="count">份量</param>
-    public void Eat (string food,int count)
+    public void Eat(string food, int count)
     {
         Debug.Log(name + ":" + food + "，份量:" + count);
     }
