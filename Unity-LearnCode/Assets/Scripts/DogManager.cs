@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class DogManager:MonoBehaviour
+public class DogManager : MonoBehaviour //繼承程式
 {
     public Dog DogA = new Dog();
     public Dog DogB = new Dog();
@@ -24,6 +24,15 @@ public class DogManager:MonoBehaviour
 
         Debug.Log(DogA + DogA.name + "品種:" + DogA.type + "顏色:" + DogA.color);
         Debug.Log(DogB + DogB.name + "品種:" + DogB.type + "顏色:" + DogB.color);
+
+        DogA.Bark();
+        DogB.Bark();
+        Debug.Log(DogA.name + "的實際年齡為:" + DogA.ConverAge());
+        Debug.Log(DogB.name + "的實際年齡為:" + DogB.ConverAge());
+
+        DogA.Eat("寶路");
+        DogB.Eat("骨頭",10);
+
     }
     #endregion
 
